@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+    <context-root>LogReqService</context-root>
+    
+    <resource-ref>
+		<res-ref-name>logReqDataSourceTO</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<jndi-name>java:/logReqDataSourceTO</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>logReqDataSourceP4</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<jndi-name>java:/logReqDataSourceP4</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>logReqDataSourceP5</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<jndi-name>java:/logReqDataSourceP5</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>logReqDataSourceP6</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<jndi-name>java:/logReqDataSourceP6</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>logReqDataSourceS1</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<jndi-name>java:/logReqDataSourceS1</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>logReqDataSourceM1</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<jndi-name>java:/logReqDataSourceM1</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>logReqDataSourceR0</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<jndi-name>java:/logReqDataSourceR0</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>logReqDataSourceQ3</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<jndi-name>java:/logReqDataSourceQ3</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>logReqDataSourceSA</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<jndi-name>java:/logReqDataSourceSA</jndi-name>
+	</resource-ref>
+	<resource-ref>
+		<res-ref-name>logReqDataSourceRA</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<jndi-name>java:/logReqDataSourceRA</jndi-name>
+	</resource-ref>
+   
+</jboss-web>
