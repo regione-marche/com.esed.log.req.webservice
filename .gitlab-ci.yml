@@ -4,4 +4,7 @@ include:
 
 variables:
   PROFILE: "-P COLLPROD"
-  UPLOAD_FILE: "com.esed.log.req.webservice.war"
+
+upload-to-package-registry:
+  variables:
+    UPLOAD_FILE: "com.esed.log.req.webservice.war"
