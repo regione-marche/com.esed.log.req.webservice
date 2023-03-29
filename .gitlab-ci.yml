@@ -3,4 +3,4 @@ include:
     file: /java-8.yml
 
 variables:
-  PROFILE: "COLLPROD"
+  PROFILE: "-P COLLPROD"
