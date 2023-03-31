@@ -168,7 +168,6 @@
 									<include>**/*</include>
 								</webResource>
 							</webResources>
-							<attachClasses>true</attachClasses>
 						</configuration>
 					</plugin>
 				</plugins>
