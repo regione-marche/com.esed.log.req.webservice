@@ -6,15 +6,15 @@ import java.util.Set;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-import org.apache.log4j.Logger;
-
 import com.esed.log.req.webservice.resources.LogExec;
+import com.seda.commons.logger.CustomLoggerManager;
+import com.seda.commons.logger.LoggerWrapper;
 
 @ApplicationPath("/app") 
 public class App extends Application {
 
-	private static Logger logger = Logger.getLogger(App.class);
-	
+	protected static LoggerWrapper logger = CustomLoggerManager.get(App.class);
+
 	private Set<Object> singleton = new HashSet<Object>();
 	private Set<Class<?>> classes = new HashSet<Class<?>>();
 	
