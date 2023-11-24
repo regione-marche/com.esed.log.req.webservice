@@ -9,8 +9,6 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
 import javax.ws.rs.core.Response.Status;
 
-import org.apache.log4j.Logger;
-
 import com.esed.log.req.ExecLogPap;
 import com.esed.log.req.ExecLogWin;
 import com.esed.log.req.ExecRequest;
@@ -19,15 +17,15 @@ import com.esed.log.req.dati.CollectionDto;
 import com.esed.log.req.dati.LogPap;
 import com.esed.log.req.dati.LogRequest;
 import com.esed.log.req.dati.LogWin;
+import com.seda.commons.logger.CustomLoggerManager;
+import com.seda.commons.logger.LoggerWrapper;
 
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 @Path("exec")
 public class LogExec {
 
-	private static final Logger logger = Logger.getLogger(LogExec.class);
-
-	
+	private static final LoggerWrapper logger = CustomLoggerManager.get(LogExec.class);
 	
 	@POST
 	@Path("/save")
