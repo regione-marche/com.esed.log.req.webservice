@@ -24,6 +24,11 @@
 	</properties>
 
 	<build>
+		<resources>
+            <resource>
+				<directory>src/resources</directory>
+			</resource>
+    	</resources>
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
