@@ -5,7 +5,7 @@
 	<groupId>com.esed.log.req.webservice</groupId>
 	<artifactId>com.esed.log.req.webservice</artifactId>
 	<packaging>war</packaging>
-	<version>1.0</version>
+	<version>1.1.0</version>
 
 	<name>com.esed.log.req.webservice</name>
 	<description>com.esed.log.req.webservice</description>
