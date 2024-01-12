@@ -7,9 +7,9 @@
         <Console name="STDOUT" target="SYSTEM_OUT">
             <PatternLayout pattern="${LOG_PATTERN}"/>
         </Console>
-        <RollingFile name="com.esed.log.req.webservice-ws"
-                	  fileName="${sys:jboss.server.log.dir}/com.esed.log.req.webservice-ws.log"
-                	  filePattern="%d{yyyy-MM-dd}-com.esed.log.req.webservice-ws.%i.log.gz"
+        <RollingFile name="com-esed-log-req-webservice-ws"
+                	  fileName="${sys:jboss.server.log.dir}/com-esed-log-req-webservice-ws.log"
+                	  filePattern="%d{yyyy-MM-dd}-com-esed-log-req-webservice-ws.%i.log.gz"
                 	  ignoreExceptions="false" filePermissions="rw-rw-r--">
             <PatternLayout pattern="${LOG_PATTERN}"/>
 			<!-- <JsonTemplateLayout eventTemplateUri="classpath:ElasticsearchJsonEventLayoutV1.json"/> -->
@@ -19,9 +19,9 @@
             <!-- <DefaultRolloverStrategy max="10" /> -->
             <ThresholdFilter level="INFO"/>
         </RollingFile>
-        <RollingFile name="com.esed.log.req.webservice-ws-error"
-                	 fileName="${sys:jboss.server.log.dir}/com.esed.log.req.webservice-ws-error.log"
-                	 filePattern="com.esed.log.req.webservice-ws-error.%i.log"
+        <RollingFile name="com-esed-log-req-webservice-ws-error"
+                	 fileName="${sys:jboss.server.log.dir}/com-esed-log-req-webservice-ws-error.log"
+                	 filePattern="com-esed-log-req-webservice-ws-error.%i.log"
                      ignoreExceptions="false" filePermissions="rw-rw-r--">
 			<JsonTemplateLayout eventTemplateUri="classpath:ElasticsearchJsonEventLayoutV1.json"/>
             <Policies>
@@ -33,12 +33,12 @@
     </Appenders>
     <Loggers>
 		<Logger name="com.esed.log.req.webservice" level="DEBUG" additivity="false">
-			<AppenderRef ref="com.esed.log.req.webservice-ws" />
-            <!-- <AppenderRef ref="com.esed.log.req.webservice-ws-debug" /> -->
-            <AppenderRef ref="com.esed.log.req.webservice-ws-error" />
+			<AppenderRef ref="com-esed-log-req-webservice-ws" />
+            <!-- <AppenderRef ref="com-esed-log-req-webservice-ws-debug" /> -->
+            <AppenderRef ref="com-esed-log-req-webservice-ws-error" />
 		</Logger>         
         <Root level="INFO" >
-            <AppenderRef ref="com.esed.log.req.webservice-ws" />
+            <!-- <AppenderRef ref="com-esed-log-req-webservice-ws" /> -->
             <AppenderRef ref="STDOUT" />
         </Root>
     </Loggers>
